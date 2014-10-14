@@ -66,8 +66,7 @@ var md6hash = function() {
 	}
 	 
 	function _shr(x, n) {
-		var a = x[0] | 0x0,
-				b = x[1] | 0x0;
+		var a = x[0] | 0x0, b = x[1] | 0x0;
 			
 		if(n >= 32) {
 			return [0x0, (a >>> (n - 32))];
@@ -87,7 +86,7 @@ var md6hash = function() {
 			hash = hash.slice(0, length);
 		}
 		
-		if (remain > 0) {
+		if(remain > 0) {
 			hash[length - 1] &= (0xff << (8 - remain)) & 0xff;
 		}
 		
@@ -138,7 +137,7 @@ var md6hash = function() {
 			var i, j, s, x, S = [].concat(S0), A = [].concat(N);
 			
 			for(j = 0, i = n ; j < r ; j += 1, i += 16) {
-				for (s = 0; s < 16; s += 1) {
+				for(s = 0 ; s < 16 ; s += 1) {
 					x = [].concat(S);
 					x = _xor(x, A[i + s - t[5]]);
 					x = _xor(x, A[i + s - t[0]]);
@@ -283,7 +282,7 @@ var md6hash = function() {
 		for(i in hash) {
 			var v = hash[i];
 			var x = v.toString(16);
-			if(x.length == 1) x = "0" + x;
+			if(x.length === 1) x = "0" + x;
 			hex += x;
 		}
 
@@ -308,3 +307,8 @@ var md6hash = function() {
 		raw: _raw
 	};
 };
+
+var md6 = new md6hash();
+var data = "md6 FTW";
+var result = md6.hex(data);
+console.log(result);
