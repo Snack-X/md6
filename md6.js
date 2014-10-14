@@ -307,8 +307,3 @@ var md6hash = function() {
 		raw: _raw
 	};
 };
-
-var md6 = new md6hash();
-var data = "md6 FTW";
-var result = md6.hex(data);
-console.log(result);
