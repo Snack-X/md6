@@ -8,6 +8,10 @@
  *      var result = md6.hex(data);
  *      console.log(result); // 7bfaa624f661a683be2a3b2007493006a30a7845ee1670e499927861a8e74cce
  *
+ *  For node.js:
+ *      var md6hash = require("./md6").md6hash;
+ *      var md6 = new md6hash();
+ *
  */
 var md6hash = function() { 
 	function to_word(input) {
@@ -307,3 +311,5 @@ var md6hash = function() {
 		raw: _raw
 	};
 };
+
+if(typeof exports !== "undefined") exports.md6hash = md6hash;
