@@ -5,9 +5,9 @@
 # md6hash for Python 2, 3
 #
 # Usage:
-#     md6 = md6hash();
-#     data = "md6 FTW";
-#     result = md6.hex(data);
+#     md6 = md6hash()
+#     data = "md6 FTW"
+#     result = md6.hex(data)
 #     print(result)
 #
 
