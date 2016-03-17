@@ -1,13 +1,26 @@
-# md6
+Md6-256
+==========
 
-md6 FTW
+Contents/Menu
+----------
+* About
+* Requirements
+* License
+* Download
+* Issues/Feedbacks
+* Contribution
+* Credits
 
-## Supports
+About
+----------
+MD6-256 hash algoritm for PHP, Python and Javascript.
 
-* php
+Requirements
+----------
+1. PHP | Python | Javascript
 
-## LICENSE
-
+License
+----------
 ```
         DO WHAT THE FUCK YOU WANT TO PUBLIC LICENSE 
                     Version 2, December 2004 
@@ -23,3 +36,31 @@ md6 FTW
 
   0. You just DO WHAT THE FUCK YOU WANT TO.
 ```
+
+Download
+----------
+Download the latest version:
+* Github:
+ * Zip: https://github.com/Snack-X/md6/archive/master.zip
+ * tAr.GZ: https://github.com/Snack-X/md6/archive/master.tar.gz
+ * SSh: git@github.com:Snack-X/md6.git
+
+Issues/Feedbacks
+----------
+* Email: korsnack@korsnack.kr
+* Website: http://korsnack.kr
+* Via Github:
+ * https://github.com/Snack-X/md6/issues
+
+Contribution
+----------
+* Send feedbacks.
+* Submit bug reports.
+* Fix bugs or add new features:
+ * Via Github:
+   * HTTPS: https://github.com/Snack-X/md6.git
+   * SSh: git@github.com:Snack-X/md6.git
+
+Credits
+----------
+* Snack [Owner/Developer/Maintainer] <http://korsnack.kr>
