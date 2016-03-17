@@ -1,6 +1,6 @@
 <?php
 
-require("../md6.php");
+require "../md6.php";
 
 $md6 = new md6hash();
 $result = file("result.csv");
