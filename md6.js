@@ -1,6 +1,6 @@
 /**
  * 
- *  md6hash for Javascript
+ *  md6-256 hash algoritm for Javascript
  *
  *  Usage :
  *      var md6 = new md6hash();
