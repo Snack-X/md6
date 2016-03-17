@@ -1,7 +1,7 @@
 <?php
 /**
  * 
- *  md6hash for PHP
+ *  md6-256 hash algoritm for PHP
  *
  *  Usage :
  *      $md6 = new md6hash;
@@ -55,9 +55,8 @@ class md6hash {
 		if($n >= 32) {
 			return array(($b << ($n - 32)) & 0xffffffff, 0x00000000);
 		}
-		else {
-			return array((($a << $n) | ($b >> (32 - $n))) & 0xffffffff, ($b << $n) & 0xffffffff);
-		}
+
+		return array((($a << $n) | ($b >> (32 - $n))) & 0xffffffff, ($b << $n) & 0xffffffff);
 	}
 
 	private function _shr($x, $n) {
@@ -67,9 +66,8 @@ class md6hash {
 		if($n >= 32) {
 			return array(0x00000000, $a >> ($n - 32));
 		}
-		else {
-			return array(($a >> $n) & 0xffffffff, (($a << (32 - $n)) | ($b >> $n)) & 0xffffffff);
-		}
+
+		return array(($a >> $n) & 0xffffffff, (($a << (32 - $n)) | ($b >> $n)) & 0xffffffff);
 	}
 
 	private function crop($size, $hash, $right = false) {
