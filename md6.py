@@ -2,7 +2,7 @@
 # -*- coding: utf-8 -*-
 
 #
-# md6hash for Python 2, 3
+# md6-256 hash algoritm for Python 2, 3
 #
 # Usage:
 #     md6 = md6hash()
